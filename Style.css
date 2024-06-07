@@ -1,0 +1,144 @@
+body{
+	margin:0;
+	font-family: sans-serif;
+	background-color: #222;
+}
+*{
+	box-sizing: border-box;
+}
+h3{
+    color: #3d96b9;
+    font-size: 20px;
+}
+h2{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.form-box{
+	max-width: 400px;
+	background-color: rgba(255,255,255,0.1);
+	margin:150px auto;
+	padding:40px;
+	border-radius: 8px;
+}
+.form-box label input{
+	display: none;
+}
+.form-box label {
+	display: block;
+	cursor: pointer;
+	margin-bottom: 30px;
+	padding-left: 55px;
+	position: relative;
+}
+.form-box label .circle{
+	height: 40px;
+	width: 40px;
+	border:5px solid #ffffff;
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	left:0;
+	top:-5px;
+	transition: border-color .5s ease;
+}
+.form-box label .circle::before{
+	content: '';
+	height: 16px;
+	width: 16px;
+	background-color: #ff9800;
+	position: absolute;
+	left:0;
+	top:0;
+	border-radius: 50%;
+	box-sizing: border-box;
+	margin-left:7px;
+	margin-top:7px;
+	transition: transform .5s ease;
+	transform: scale(0);
+}
+.form-box label span{
+	font-size: 30px;
+	color:#ffffff;
+	display: inline-block;
+	text-transform: uppercase;
+	transition:color .5s ease;
+}
+.form-box label input:checked + .circle{
+	border-color:#ff9800;
+}
+.form-box label input:checked + .circle::before{
+	transform: scale(1);
+}
+.form-box label input:checked + .circle + span{
+	color:#ff9800;
+}
+#sumit{
+    background-color: #ff9800;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 230px;
+    text-decoration: none;
+}
+#ok{
+    background-color: #b39eb5;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: 250px;
+    text-decoration: none;
+}
+#sumit1{
+    background-color: #9e2ea6;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 230px;
+    text-decoration: none;
+}
+#sumit1:hover{
+    background-color: #f28fff;
+}
+#Click{
+    background-color: #f958ff;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 300px;
+    margin-bottom: 20px;
+    margin-left: 650px;
+    text-decoration: none;
+}
+#kiss{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 630px;
+    text-decoration: none;
+    background-color: aqua;
+    border-radius: 50px;
+}
